@@ -6,6 +6,7 @@ const findAllUser = async (req, res) => {
     res.json(users);
 }
 
+
 const findUser = async (req, res) => {
     console.log("findUser", req.params.uid)
     const userId = req.params.uid;

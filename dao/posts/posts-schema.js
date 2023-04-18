@@ -1,19 +1,21 @@
 import mongoose from 'mongoose';
 
 const schema = mongoose.Schema({
-
-    username: String,
-
+    authorID: Object,
+    title: String,
     time: Date,
-
-    replies: Number,
-
+    phone: Number,
+    city: String,
+    state: String,
+    zip: String,
+    comments: Array,
+    tags: Array,
+    thumbUp: Number,
+    thumbDown: Number,
     endorsement: Number,
-
-    text: String,
-
-    number: String,
-
+    description: String,
+    spamText: String,
+    photos: Array,
 }, {collection: 'smish'});
 export default schema;
 
